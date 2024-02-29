@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    background: #E5E5FD;
+    padding: 8% 5%;
+    border: solid 9px rgb(4, 4, 80);
+    margin: 10% 20%;
+}
+
+.modify {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image {
+    flex: 0 0 30%;
+}
+
+.image img {
+    height: 225px;
+    width: 185px;
+    border-radius: 116px;
+    filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.15));
+    overflow: hidden;
+}
+
+.details {
+    flex: 0 0 70%;
+}
+
+.details h1 {
+    text-align: right;
+    font-size: 30px;
+}
+
+.details p {
+    text-align: right;
+}
+
+.content h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+}
+
+.content a {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.content ul li {
+    font-size: 12px;
+}
+
+footer {
+    font-size: 10px;
+    float: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5% 2%;
+        margin: 5% 10%;
+    }
+
+    .modify {
+        flex-direction: column;
+    }
+
+    .image {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .details {
+        flex: 0 0 100%;
+    }
+
+    .details h1,
+    .details p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content ul li {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
