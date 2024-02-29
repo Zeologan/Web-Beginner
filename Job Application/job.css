@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px;
+    width: 100%;
+    max-width: 650px;
+}
+.container h1{
+    margin: 10px 0px;
+}
+.main-user-info{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.user-input-box input,select {
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    padding: 0 10px;
+    font-weight: 600;
+}
+textarea{
+    width: 100%;
+    height: 130px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#CV{
+    text-align: center;
+    padding-top: 8px;
+}
+
+.Apply{
+    float: right;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: solid 1px;
+    background-color: red;
+    color: white;
+}
