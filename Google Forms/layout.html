@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <a href="#" class="logo">Student Study Hub</a>
+            <!-- navbar -->
+            <ul class="navbar">
+                <a href="register/">Register</a>
+                <a href="/login">Login</a>
+            </ul>
+        </header>
+        <form action="#" class="form">
+            <h3>Register</h3>
+            <div class="box">
+                <div class="input-box">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" required />
+                </div>
+
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="*************************" required />
+                </div>
+
+                <button>Register</button>
+            </div>
+
+            <h3>Login</h3>
+            <div class="box">
+                <div class="input-box">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" required />
+                </div>
+
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="*************************" required />
+                </div>
+                <button>Sign In</button>
+            </div>
+
+            <h3>Course Materials</h3>
+            <div class="course_materials">
+                <h4>Introduction to Algebra</h4>
+                <p>Get started with the basics of Algebra,
+                    including variables, equations, and
+                    functions.</p>
+                <a href="#">Download materials</a>
+            </div>
+
+            <h3>Discussion</h3>
+            <div class="box">
+                <div class="input-box address">
+                    <label>General Discussion</label>
+                    <input type="text" placeholder="Enter street address" required />
+                </div>
+            </div>
+
+            <h3>File Sharing</h3>
+            <div class="box">
+                <div class="input-box">
+                    <div class="file">
+                        <label>Shared Files</label>
+                        <button type="button" id="custom-button">Upload File</button>
+                    </div>
+                    <span id="custom-text">No file chosen, yet.</span>
+                    <input type="file" id="real-file" hidden="hidden" />
+                </div>
+            </div>
+        </form>
+        <footer>
+            <p>© 2023 Student Study Hub. All rights reserved.</p>
+        <footer>
+    </section>
+    <script>
+        const realFileBtn = document.getElementById("real-file");
+        const customBtn = document.getElementById("custom-button");
+        const customTxt = document.getElementById("custom-text");
+
+        customBtn.addEventListener("click", function () {
+            realFileBtn.click();
+        });
+
+        realFileBtn.addEventListener("change", function () {
+            if (realFileBtn.value) {
+                customTxt.innerHTML = realFileBtn.value.match(
+                    /[\/\\]([\w\d\s\.\-\(\)]+)$/
+                )[1];
+            } else {
+                customTxt.innerHTML = "No file chosen, yet.";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
