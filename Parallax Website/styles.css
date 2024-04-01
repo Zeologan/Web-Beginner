@@ -9,16 +9,15 @@ html,body{
 }
 
 .pimg1{
-    background-image: url(image/1\ img.jpg);
+    background-image: url(Image/parallex1.jpg);
     min-height: 100%;
 }
-
 .pimg2{
-    background-image: url(image/2\ img.jpg);
+    background-image: url(Image/parallex2.jpg);
     min-height: 400px;
 }
 .pimg3{
-    background-image: url(image/3\ img.jpg);
+    background-image: url(Image/parallex3.jpg);
     min-height: 400px;
 }
 .pimg1,.pimg2,.pimg3{
