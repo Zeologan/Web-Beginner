@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #dae3e6;
+}
+.search_box{
+    padding: 0 7%;
+}
+
+h1 span{
+    color: #5cbdbb;
+}
+.search_box h1{
+    font-size: 4vw;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 0 22%;
+}
+
+.search_bar{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.search_bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search_bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search_bar form button{
+    background-color: #ededed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search_bar form button i{
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5cbdbb;
+}
+
+.location-input{
+    flex: 1;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid #d6d4d4;
+}
+
+.space_seacrh{
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid #d6d4d4;
+}
+.space_seacrhs{
+    margin-right: 20px;
+}
+.search_bar form label{
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 700px){
+    .search_box h1 {
+        font-size: 4vw;
+        color: #000;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 22%;
+    }
+    .search_bar{
+        width: 100%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+    }
+    .search_bar form{
+        display: block;
+
+    }
+    .search_bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search_bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .location-input{
+        flex: 1;
+        margin-right: 20px;
+        padding-right: 10px;
+        border-right: none;
+    }
+    
+    .space_seacrh{
+        margin-right: 20px;
+        padding-right: 10px;
+        border-right: none;
+    }
+}
